@@ -1,3 +1,5 @@
+[Introduction](./Introduction.md) | [Chapter 1. The basics.](./Chapter1.md) | [Chapter 2. HTML properties.](./Chapter2.md) | [Chapter 3. Events.](./Chapter3.md) | [Chapter 4. Basic data storage.](./Chapter4.md) | [Chapter 5. Canvas and images.](./Chapter5.md)
+
 # Purescript web programming basics tutorial: Halogen versus purescript HTML.
 # Introduction
  This tutorial is meant as an aid for people who wish to develop web HTML using purescript. We will show how to produce HTML5 code using purescript without Halogen, and compare the results with those made with Halogen. Although Halogen is the current 'standard' for purescript HTML programming, we will show that you may not always need it. And even if you only wish to use Halogen for your web programming in purescript, this tutorial will help you to develop a deeper understanding of Halogen. 

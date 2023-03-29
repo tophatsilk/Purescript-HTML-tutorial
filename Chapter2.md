@@ -1,3 +1,4 @@
+[Introduction](./Introduction.md) | [Chapter 1. The basics.](./Chapter1.md) | [Chapter 2. HTML properties.](./Chapter2.md) | [Chapter 3. Events.](./Chapter3.md) | [Chapter 4. Basic data storage.](./Chapter4.md) | [Chapter 5. Canvas and images.](./Chapter5.md)
 # Purescript web programming basics tutorial: Halogen versus purescript HTML. 
 # Chapter 2 - HTML properties.
  This is the second chapter of a tutorial that meant as an aid for people who wish to develop web HTML using purescript. In Chapter 1 we showed how to build the essential, basic parts of an HTML page using basic purescript HTML, without Halogen. We gave all the tools to recreate the first example in the Halogen Guide (https://github.com/purescript-halogen/purescript-halogen/tree/master/docs/guide). Now, we will continue to provide alternatives to the next part discussed in the Halogen Guide: How to set properties of HTML elements.

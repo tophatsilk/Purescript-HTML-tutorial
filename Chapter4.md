@@ -1,3 +1,4 @@
+[Introduction](./Introduction.md) | [Chapter 1. The basics.](./Chapter1.md) | [Chapter 2. HTML properties.](./Chapter2.md) | [Chapter 3. Events.](./Chapter3.md) | [Chapter 4. Basic data storage.](./Chapter4.md) | [Chapter 5. Canvas and images.](./Chapter5.md)
 # Purescript web programming basics tutorial: Halogen versus purescript HTML.
 # Chapter 4 - Basic data storage.
 In this chapter we will cover the handling of data for web programming with purescript. We introduce two new concepts: a data format and type class instances.

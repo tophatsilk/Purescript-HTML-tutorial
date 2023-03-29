@@ -211,8 +211,7 @@ You now have a recipe to encode records to json and decode json. The json format
 <H2> <span style= "color:green">Theory: storing data in HTML page </span></H2>
 
 <span style= "color:green">
-The following part is a theoretical experiment and is not necessary for building web pages. You can skip it without loosing the benefits of this tutorial, but it might give you ideas for your own work. I you want, you can skip to the next part. [Chapter 5. Canvas and images.](./Chapter5.md)
-</span>
+The following part is a theoretical experiment and is not necessary for building web pages. You can skip it without loosing the benefits of this tutorial, but it might give you ideas for your own work. I you want, you can skip to the next part. </span> [Chapter 5. Canvas and images.](./Chapter5.md)
 
 ## HTML or State monad
 

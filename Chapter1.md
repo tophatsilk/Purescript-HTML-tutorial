@@ -1,6 +1,6 @@
 [Introduction](./Introduction.md) | [Chapter 1. The basics.](./Chapter1.md) | [Chapter 2. HTML properties.](./Chapter2.md) | [Chapter 3. Events.](./Chapter3.md) | [Chapter 4. Basic data storage.](./Chapter4.md) | [Chapter 5. Canvas and images.](./Chapter5.md)
 # Purescript web programming basics tutorial: Halogen versus purescript HTML. 
-# Chapter 1 - the basics.
+# Chapter 1 - the basics
 
 In this chapter we will show how to build the essential, basic parts of an HTML page using basic purescript HTML. We will provide all the necessary tools to recreate the first example in the Halogen Guide, without using Halogen itself.
 ## First steps: Adding an element to the DOM

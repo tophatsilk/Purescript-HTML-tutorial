@@ -382,7 +382,7 @@ But, do not despair, because all the above code shows a lot of repetition, and o
 ### Are we ready to compare with Halogen now? 
 We could, but the Halogen Guide also refers to a "state that represents values over time", which would not be possible with "pure functions that produce HTML". So, let's see what we can do.
 
-## Step 3: Using states to keep values over time.
+## Step 3: Using states to keep values over time
 We will use the  ```Ref``` type (https://pursuit.purescript.org/packages/purescript-refs/6.0.0/docs/Effect.Ref#v:new) for mutable value references. It is described in the Purescript by Example book in chapter 12 on canvas graphics (https://book.purescript.org/chapter12.html) in the paragraph "Global Mutable State".
 
 For an interesting alternative tutorial on HTML programming with purescript, without Halogen, using a similar approach, we refer to Gabriel Crispino's excellent 'Moving box' example (https://levelup.gitconnected.com/building-a-moving-box-with-purescript-ae1a490429ab). But the example below is easier, so you might want to start with that one.

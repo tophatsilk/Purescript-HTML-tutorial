@@ -18,7 +18,7 @@ Halogen is built around 'components'. However, although 'Components' are the fun
 
 This suggests that purescript HTML in itself would not be able to provide these functions. However, it is perfectly feasible to have functions respond to DOM events, without resorting to Halogen. In the following chapters we will give a short demonstration of 'common [purescript] HTML' functions responding to DOM events and altering DOM elements in response, without any Halogen.
 
-## Purescript pros and cons.
+## Purescript pros and cons
 Before we start, it may be wise to look at the advantages and disadvantages of purescript as a replacement for javascript.
 
 **Pros**

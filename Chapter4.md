@@ -1,14 +1,14 @@
 [Introduction](./Introduction.md) | [Chapter 1. The basics.](./Chapter1.md) | [Chapter 2. HTML properties.](./Chapter2.md) | [Chapter 3. Events.](./Chapter3.md) | [Chapter 4. Basic data storage.](./Chapter4.md) | [Chapter 5. Canvas and images.](./Chapter5.md)
 # Purescript web programming basics tutorial: Halogen versus purescript HTML.
-# Chapter 4 - Basic data storage.
+# Chapter 4 - Basic data storage
 In this chapter we will cover the handling of data for web programming with purescript. We introduce two new concepts: a data format and type class instances.
-## Data format JSON.
+## Data format JSON
 To store data in files it is advisable to use a standard data format. A popular data interchange format, that has the advantage of being human-readable, is the JSON (JavaScript Object Notation, https://en.wikipedia.org/wiki/JSON) data format. One of the current standard purescript modules for this data format is argonaut (https://pursuit.purescript.org/packages/purescript-argonaut). We will use this module in our examples.
 
 ## Type class instances.
 Another new concept we will be using is the type class _instance_. We refer to Chapter 6 of the Purescript by Example book for examples (https://book.purescript.org/chapter6.html). In this chapter you can read: "A type class instance contains implementations of the functions defined in a type class, specialized to a particular type." We will show application of this concept for conversions to json, and also demonstrate some examples of _Show_ type classes that are discussed in the Purescript by Example book.
 
-## Records to data and back.
+## Records to data and back
 In the following we will demonstrate the conversion of a record to json, and json to string, and back. The code example below takes a record, converts it to json, converts the json to a string to be shown on a page. After that we will make a full circle by extracting the data from the string shown on the page and convert it back to a record.
 
 **Note:** To test this code on your own machine, you will have to install the argonaut module (```spago install argonaut```).

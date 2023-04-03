@@ -1,6 +1,6 @@
 [Introduction](./Introduction.md) | [Chapter 1. The basics.](./Chapter1.md) | [Chapter 2. HTML properties.](./Chapter2.md) | [Chapter 3. Events.](./Chapter3.md) | [Chapter 4. Basic data storage.](./Chapter4.md) | [Chapter 5. Canvas and images.](./Chapter5.md)
 # Purescript web programming basics tutorial: Halogen versus purescript HTML.
-# Chapter 5 - Canvas and images.
+# Chapter 5 - Canvas and images
 In this part we will cover the html canvas object type and how to add an image to your page. 
 
 We will introduce several 'new' concepts: 
@@ -9,15 +9,15 @@ We will introduce several 'new' concepts:
 - the properties of a mouse event, and
 - throwing an exception.
 
-## HTML canvas object.
+## HTML canvas object
 It is quite easy to create a canvas element that will be recognized as such by the browser. This is just a matter of using the \<canvas> tag. However, an element created with this tag is not of the CanvasElement type for purescript. One easy way to get this element as a CanvasElement type is by using the 'getCanvasElementById' (```getCanvasElementById :: String -> Effect (Maybe CanvasElement)```) function from the Graphics.Canvas module (https://pursuit.purescript.org/packages/purescript-canvas/6.0.0/docs/Graphics.Canvas). This is why, in the following code, we first create a canvas element with an Id, and, after that, create a new reference to it of the CanvasElement type. This is the same approach as used in the Purescript by Example book (https://book.purescript.org/chapter12.html?highlight=canvas#simple-shapes). And, just as in the book, in our code below we obtain a CanvasElement from a Maybe CanvasElement using: ```let canvasSure = unsafePartial fromJust canvas```. This is a rather blunt way to handle the Maybe monad, but as we just created the element ourselves, we just assume it will be fine. ("Don't do this at home, kids!")
 
 Those of you familiar with javascript will be used to the fact that you do not use the canvas directly but the '2D graphics context'. If you are not familiar with this, we recommend this tutorial: https://www.w3schools.com/graphics/canvas_intro.asp. Purescript canvas handling stays quite close to its javascript counterpart, and the Purescript by Example book (https://book.purescript.org/chapter12.html?highlight=canvas#simple-shapes) gives some examples you could try in: https://try.purescript.org/, using our code in Fig. 5.1 below.
 
-## Adding an image, and throwing exceptions.
+## Adding an image, and throwing exceptions
 To obtain an image, we use the tryLoadImage function (```tryLoadImage :: String -> (Maybe CanvasImageSource -> Effect Unit) -> Effect Unit```) from the Graphics.Canvas module (https://pursuit.purescript.org/search?q=tryloadimage) in our withImage function. Because the image loading may fail, we check the image loading success, and throw an exception in case of failure. In case of success, we add the image with the drawImage function (```drawImage :: Context2D -> CanvasImageSource -> Number -> Number -> Effect Unit```) from the same module (https://pursuit.purescript.org/search?q=drawimage).
 
-## Mouse event properties.
+## Mouse event properties
 In Chapter 3 we obtained the value of an input event in Fig. 3.1. We may also obtain information from other events. Like always in purescript, we need to cast the event type to a suitable event type before we can do so. This is what happens in our 'turnEventIntoMaybeMouseEvent' function in Fig. 5.1 below.
 
 ```
@@ -201,7 +201,7 @@ main = do
 
 
 
-## Purescript and its documentation.
+## Purescript and its documentation
 
 This may be a good time to warn you about the learning curve for purescript. The pursuit documentation (https://pursuit.purescript.org/) about the drawImage function, which we used in Fig. 5.1, is just this:
 
